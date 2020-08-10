@@ -13,3 +13,11 @@ resource "azurerm_subnet" "vpn-gateway" {
 
   address_prefixes       = ["172.16.1.0/24"]
 }
+
+resource "azurerm_subnet" "admin" {
+  name = "AdminSubnet"
+  virtual_network_name = azurerm_virtual_network.core.name
+  resource_group_name = azurerm_resource_group.core.name
+
+  address_prefixes       = ["172.16.2.0/24"]
+}
