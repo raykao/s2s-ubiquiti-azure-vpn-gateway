@@ -1,0 +1,6 @@
+location = "canadacentral"
+prefix = "rk"
+# Home/On-prem Public IP Address
+onprem-pip = "99.231.204.116"
+# Home/On-prem network CIDR
+onprem-address-space = "10.0.0.0/24"
